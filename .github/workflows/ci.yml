@@ -44,7 +44,7 @@ jobs:
         run: XDEBUG_MODE=coverage vendor/bin/phpunit
 
       - name: CoverageCheck
-        run: coverage-check .build/coverage/clover.xml 100
+        run: vendor/bin/coverage-check .build/coverage/clover.xml 100
 
       - name: PHP Infection
-        run: infection --skip-initial-tests --threads=64 --coverage=.build/coverage
+        run: vendor/bin/infection --skip-initial-tests --threads=64 --coverage=.build/coverage
