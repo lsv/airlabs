@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\ParameterBag;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Serializer\SerializerInterface;
 
-#[\AllowDynamicProperties] abstract class AbstractRequest implements RequestInterface
+abstract class AbstractRequest implements RequestInterface
 {
     private const BASE_URL = 'https://airlabs.co/api/v9';
     protected ParameterBag $queryData;
