@@ -1,0 +1,9 @@
+/composer.lock
+/vendor
+
+/.build
+/.php-cs-fixer.cache
+/.phpunit.result.cache
+/.phpunit.cache
+/phpunit.xml
+/tests/requests/http-client.private.env.json

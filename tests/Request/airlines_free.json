@@ -1,0 +1,19 @@
+{
+  "request": {
+    "key": {
+      "type": "free"
+    }
+  },
+  "response": [
+    {
+      "name": "Airlink",
+      "iata_code": "4Z",
+      "icao_code": "LNK"
+    },
+    {
+      "name": "Air Corsica",
+      "iata_code": "XK",
+      "icao_code": "CCM"
+    }
+  ]
+}

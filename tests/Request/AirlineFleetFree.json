@@ -1,0 +1,25 @@
+{
+  "request": {
+    "key": {
+      "type": "free"
+    }
+  },
+  "response": [
+    {
+      "hex": "A08E82",
+      "airline_icao": "RPA",
+      "airline_iata": "AA",
+      "manufacturer": null,
+      "icao": null,
+      "iata": null
+    },
+    {
+      "hex": "A08EFD",
+      "airline_icao": "AAL",
+      "airline_iata": "AA",
+      "manufacturer": "AIRBUS",
+      "icao": "A321",
+      "iata": "321"
+    }
+  ]
+}

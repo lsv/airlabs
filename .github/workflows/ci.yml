@@ -1,0 +1,50 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  ci:
+    strategy:
+      matrix:
+        php-versions: [ '8.2' ]
+        composer-versions: ['update --prefer-dist']
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-versions }}
+          coverage: xdebug
+
+      - name: Install Composer dependencies
+        run: composer install --no-progress --prefer-dist --optimize-autoloader
+
+      - name: Setup composer versions
+        run: composer ${{ matrix.composer-versions }}
+
+      - name: Run phpcsfixer
+        run: PHP_CS_FIXER_IGNORE_ENV=1 vendor/bin/php-cs-fixer fix --dry-run --diff --show-progress=none
+
+      - name: Phpstan
+        run: vendor/bin/phpstan --xdebug
+
+      - name: Psalm
+        run: vendor/bin/psalm
+
+      - name: PHPUnit
+        run: XDEBUG_MODE=coverage vendor/bin/phpunit
+
+      - name: CoverageCheck
+        run: coverage-check .build/coverage/clover.xml 100
+
+      - name: PHP Infection
+        run: infection --skip-initial-tests --threads=64 --coverage=.build/coverage

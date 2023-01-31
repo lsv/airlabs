@@ -1,0 +1,17 @@
+{
+  "request": {
+    "key": {
+      "type": "free"
+    }
+  },
+  "response": [
+    {
+      "name": "Paris Charles de Gaulle Airport",
+      "iata_code": "CDG",
+      "icao_code": "LFPG",
+      "lat": 49.009592,
+      "lng": 2.555675,
+      "country_code": "FR"
+    }
+  ]
+}

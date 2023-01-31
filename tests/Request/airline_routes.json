@@ -1,0 +1,42 @@
+{
+  "request": {
+    "key": {
+      "type": "notfree"
+    }
+  },
+  "response": [
+    {
+      "airline_iata": "UL",
+      "airline_icao": "ALK",
+      "flight_number": "2265",
+      "flight_iata": "UL2265",
+      "flight_icao": "ALK2265",
+      "cs_airline_iata": "EY",
+      "cs_flight_iata": "EY265",
+      "cs_flight_number": "265",
+      "dep_iata": "CMB",
+      "dep_icao": "VCBI",
+      "dep_time": "02:50",
+      "dep_time_utc": "21:20",
+      "dep_terminals": [
+        "1"
+      ],
+      "arr_iata": "AUH",
+      "arr_icao": "OMAA",
+      "arr_time": "05:50",
+      "arr_time_utc": "01:50",
+      "arr_terminals": [
+        "1",
+        "T3"
+      ],
+      "duration": 270,
+      "days": [
+        "mon",
+        "wed",
+        "sat"
+      ],
+      "counter": 8,
+      "updated": "2022-10-14T14:34:48.000Z"
+    }
+  ]
+}

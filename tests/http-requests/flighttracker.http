@@ -1,0 +1,20 @@
+### AirlineFleet - DONE
+GET https://airlabs.co/api/v9/fleets?airline_iata=AA&api_key={{API_KEY}}
+
+### Airline - DONE
+GET https://airlabs.co/api/v9/airlines?iata_code=AA&api_key={{API_KEY}}
+
+### AirlineRoute - DONE
+GET https://airlabs.co/api/v9/routes?api_key={{API_KEY}}&dep_icao=EKCH
+
+### Airport - DONE
+GET https://airlabs.co/api/v9/airports?iata_code=CDG&api_key={{API_KEY}}
+
+### FlightInformation - DONE
+GET https://airlabs.co/api/v9/flight?flight_iata=AA6&api_key={{API_KEY}}
+
+### FlightSchedule - DONE
+GET https://airlabs.co/api/v9/schedules?dep_iata=MIA&api_key={{API_KEY}}
+
+### FlightTracker - DONE
+GET https://airlabs.co/api/v9/flights?api_key={{API_KEY}}

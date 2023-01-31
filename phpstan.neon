@@ -1,0 +1,7 @@
+parameters:
+    level: 9
+    paths:
+        - src
+        - tests
+    ignoreErrors:
+        - '#Method Lsv\\Airlabs\\[a-zA-Z0-9\\_]+::call\(\)#'

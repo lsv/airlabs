@@ -1,0 +1,71 @@
+{
+  "request": {
+    "key": {
+      "type": "free"
+    }
+  },
+  "response": [
+    {
+      "airline_iata": null,
+      "airline_icao": "SVS",
+      "flight_number": "1225",
+      "flight_iata": null,
+      "flight_icao": "SVS1225",
+      "cs_airline_iata": null,
+      "cs_flight_iata": null,
+      "cs_flight_number": null,
+      "dep_iata": "CPH",
+      "dep_icao": "EKCH",
+      "dep_terminals": [
+        "3"
+      ],
+      "dep_time": "23:00",
+      "dep_time_utc": "22:00",
+      "arr_iata": "AAL",
+      "arr_icao": "EKYT",
+      "arr_terminals": null,
+      "arr_time": "23:50",
+      "arr_time_utc": "22:50",
+      "duration": 50,
+      "days": [
+        "sun"
+      ],
+      "aircraft_icao": null,
+      "counter": 14,
+      "updated": "2023-01-15T20:51:21.000Z"
+    },
+    {
+      "airline_iata": "AC",
+      "airline_icao": "ACA",
+      "flight_number": "9977",
+      "flight_iata": "AC9977",
+      "flight_icao": "ACA9977",
+      "cs_airline_iata": "EE",
+      "cs_flight_iata": "EE1215",
+      "cs_flight_number": "1215",
+      "dep_iata": "CPH",
+      "dep_icao": "EKCH",
+      "dep_terminals": [
+        "3",
+        "2"
+      ],
+      "dep_time": "14:25",
+      "dep_time_utc": "12:25",
+      "arr_iata": "AAL",
+      "arr_icao": "EKYT",
+      "arr_terminals": null,
+      "arr_time": "15:20",
+      "arr_time_utc": "13:20",
+      "duration": 55,
+      "days": [
+        "mon",
+        "tue",
+        "wed",
+        "fri"
+      ],
+      "aircraft_icao": null,
+      "counter": 8,
+      "updated": "2022-10-14T14:34:48.000Z"
+    }
+  ]
+}
